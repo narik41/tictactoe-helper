@@ -8,7 +8,7 @@ import (
 func EncodeMessage(ticTacToeMessage TicTacToeMessage) ([]byte, error) {
 	payloadBytes, err := json.Marshal(ticTacToeMessage)
 	if err != nil {
-		log.Println("Error while seralizating the message", err.Error())
+		log.Println("Error while serialize the message", err.Error())
 		return nil, err
 	}
 

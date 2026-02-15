@@ -7,9 +7,9 @@ const (
 	MSG_LOGIN_PAYLOAD    Version1MessageType = "LOGIN_PAYLOAD"        // means the login PAYLOAD is required
 	MSG_LOGIN_RESPONSE   Version1MessageType = "LOGIN_RESPONSE"       // means the login response
 	GAME_START           Version1MessageType = "GAME_START"           // means the login response
-	GAME_END             Version1MessageType = "GAME_END"             // means the login response
-	PLAYER_MOVE          Version1MessageType = "PLAYER_MOVE"          // means the login response
-	PLAYER_MOVE_RESPONSE Version1MessageType = "PLAYER_MOVE_RESPONSE" // means the login response
+	GAME_END             Version1MessageType = "GAME_END"             // means the game is ended
+	PLAYER_MOVE          Version1MessageType = "PLAYER_MOVE"          // means the player have move i.e send client to server
+	PLAYER_MOVE_RESPONSE Version1MessageType = "PLAYER_MOVE_RESPONSE" // means the server send the moved position to the client
 	ERROR                Version1MessageType = "ERROR"                // means the login response
 	WAITING_FOR_OPPONENT Version1MessageType = "WAITING_FOR_OPPONENT"
 	HEARTBEAT            Version1MessageType = "HEARTBEAT"

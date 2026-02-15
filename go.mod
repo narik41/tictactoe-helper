@@ -1,4 +1,4 @@
-module github.com/narik41/tictactoe-message
+module github.com/narik41/tictactoe-helper
 
 go 1.24
 
