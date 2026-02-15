@@ -12,6 +12,8 @@ const (
 	PLAYER_MOVE_RESPONSE Version1MessageType = "PLAYER_MOVE_RESPONSE" // means the login response
 	ERROR                Version1MessageType = "ERROR"                // means the login response
 	WAITING_FOR_OPPONENT Version1MessageType = "WAITING_FOR_OPPONENT"
+	HEARTBEAT            Version1MessageType = "HEARTBEAT"
+	HEARTBEAT_RESPONSE   Version1MessageType = "HEARTBEAT_RESPONSE"
 )
 
 type Version1MessageLoginPayload struct {
