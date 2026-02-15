@@ -3,6 +3,7 @@ package core
 import (
 	"fmt"
 	"log"
+	"time"
 
 	"github.com/google/uuid"
 )
@@ -14,4 +15,13 @@ func UUID(prefix string) string {
 		return ""
 	}
 	return fmt.Sprintf("%s-%s", prefix, newUUID.String())
+}
+
+func GetNPTToUtcInMillisecond() int64 {
+	nptLocation, err := time.LoadLocation("Asia/Kathmandu")
+	if err != nil {
+		return time.Now().UTC().UnixMilli()
+	}
+	nptTime := time.Now().In(nptLocation)
+	return nptTime.UTC().UnixMilli()
 }
